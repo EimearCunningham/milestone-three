@@ -1,45 +1,73 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# On My Bookshelf
+![Site shown on different devices](assets/images/readme-images/INSERT IMAGE HERE)
 
-Welcome USER_NAME,
+Live website: INSERT LIVE SITE LINK HERE
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+A website for users to upload book reviews, and browse other peoples book reviews.
+ 
+# UX
+ 
+### Who this website is for:
+* This website is for 
 
-## Gitpod Reminders
+### What they want to achieve:
+* They want to 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### This project is the best way to help them achieve these things because:
+* 
 
-`python3 -m http.server`
+## User Stories:
+1. As a user, I want to browse through book reviews and find more information on each book.
+2. As a user, I want to be able to upload my own book reviews to the site.
+3. As a user, I want to be able to register and create an account on the site.
+4. As a user, I want to be able to login to the site and view my profile.
+5. As a user, I want to be able to edit / delete the reviews I have uploaded. 
 
-A blue button should appear to click: *Make Public*,
+## Design 
+- Color Scheme 
 
-Another blue button should appear to click: *Open Browser*.
+- Typography 
+    
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Wireframes:
+[desktop]
+[tablet]
+[mobile]
 
-A blue button should appear to click: *Make Public*,
+# Features
+### Homepage
 
-Another blue button should appear to click: *Open Browser*.
+### Login Page
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Register Page
 
-## Updates Since The Instructional Video
+### Add Review Page
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### User Profile Page
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Features Left to Implement
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+# Technologies Used
+## Languages, frameworks and libraries used
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+## Other technologies used
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+# Testing
+This can be found in [testing.md](testing.md)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+# Deployment
 
---------
+# Credits
 
-Happy coding!
+## Code
+
+## Content
+
+## Media
+
+## Acknowledgements
+
+
+**This site is for educational purposes only** 
