@@ -8,13 +8,14 @@ A website for users to upload book reviews, and browse other peoples book review
 # UX
  
 ### Who this website is for:
-* This website is for 
+* This website is for people interested in reading.
 
 ### What they want to achieve:
-* They want to 
+* They want to browse through book reviews, add their own book reviews.
 
 ### This project is the best way to help them achieve these things because:
-* 
+* From the homepage, the user can easily browse through book reviews without having to register / login.
+* Once logged in the user has the opportunity to easily upoad their own book reviews.
 
 ## User Stories:
 1. As a user, I want to browse through book reviews and find more information on each book.
@@ -35,15 +36,37 @@ A website for users to upload book reviews, and browse other peoples book review
 [mobile]
 
 # Features
+### Navigation bar
+- The navigation bar at the top of each page allows the user to easily get to each section of the site.
+- Depending on whether the user is logged in/not, the navigation bar will display different options:
+    * If user is not logged in the navigation bar will display the options: Home, Register, Login.
+    * If the user is logged in the navigation bar will display the options: Home, Add Review, Profile, Logout.
+- The logo in the top left corner will bring the user to the homepage, as expected.
+
 ### Homepage
+- The homepage will display the navigation bar at the top of the page.
+- A large hero image will be displayed underneath the navigation bar.
+- All uploaded book reviews will be displayed on the homepage.
+- If a user is logged in, the book reviews they have uploaded themselves will have the options "Edit" and "Delete".
 
 ### Login Page
+- The login page will display the naviagation bar at the top of the page.
+- The page will contain a form with two inputs - "Username" and "Password", and a "Register" button.
+- When ths user selects the "Register" button and succesfully createas a profile, they will be redirected to their own Profile.
 
 ### Register Page
+- The register page will also display the navigation bar at the top of the page.
+- Users will be able to login to their account by submitting a form with their username and password, and selecting a "Login" button.
 
 ### Add Review Page
+- Again, the navigation bar will be visible at the top of this page.
+- Only logged in users will be able to access the "Add Review" section.
+- Users will be able to complete a form and submit a book review.
 
 ### User Profile Page
+- Logged in users will be able to navigate to their own unique profile.
+- Their profile will display all of they book reviews they uploaded.
+- From here, users will be able to Edit and Delete reviews that they uploaded.
 
 ### Features Left to Implement
 
