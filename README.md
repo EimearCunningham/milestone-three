@@ -73,8 +73,11 @@ A website for users to upload book reviews, and browse other peoples book review
 
 # Technologies Used
 ## Languages, frameworks and libraries used
+- Flask
 
 ## Other technologies used
+- MongoDB was used to create a database and store data in JSON-like documents. A database called "bookshelf" was created with three
+collections - users, reviews, categories.
 
 # Testing
 This can be found in [testing.md](testing.md)
