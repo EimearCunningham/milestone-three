@@ -73,18 +73,19 @@ A website for users to upload book reviews, and browse other peoples book review
 
 # Technologies Used
 ## Languages, frameworks and libraries used
-- Flask app created
+- Flask app created.
 
 ## Other technologies used
 - MongoDB was used to create a database and store data in JSON-like documents. A database called "bookshelf" was created with three
 collections - users, reviews, categories.
+- Deployed to Heroku.
 
 # Testing
 This can be found in [testing.md](testing.md)
 
 
 # Deployment
-Project was deployed to Heroku 
+## Project was deployed to Heroku 
 
 4 things we need to push to Heroku
 1.	Create Heroku app
@@ -104,7 +105,6 @@ Add the following keys and values: INSERT SCREENGRAB OF CONFIG VARS
 3 & 4. Push requirements.txt and Procfile to GitHub
 Go to Heroku and 'Enable automatic deployment' & 'Deploy branch'
 'Your app was succesfully deployed' - https://on-my-bookshelf-ms3.herokuapp.com/
-
 
 
 # Credits

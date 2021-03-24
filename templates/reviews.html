@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>On My Bookshelf</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block content %}
 
     {% for review in reviews %}
         {{ review.book_title }} <br>
@@ -14,6 +9,5 @@
         {{ review.book_description }}<br>
         {{ review.reviewed_by }}
     {% endfor %}
-    
-</body>
-</html>
+
+{% endblock %}
