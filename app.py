@@ -4,6 +4,7 @@ from flask import (
 from flask_pymongo import PyMongo
 if os.path.exists("env.py"):
     import env
+from werkzeug.security import generate_password_hash, check_password_hash
 
 
 app = Flask(__name__)
@@ -24,9 +25,12 @@ def get_reviews():
     return render_template("reviews.html", reviews=reviews)
 
 
+@app.route("/register", methods=["GET", "POST"])
+def register():
+    return render_template("register.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
     port =int(os.environ.get("PORT")),
     debug =True)
-
-
