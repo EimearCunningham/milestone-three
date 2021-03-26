@@ -79,6 +79,7 @@ A website for users to upload book reviews, and browse other peoples book review
 - MongoDB was used to create a database and store data in JSON-like documents. A database called "bookshelf" was created with three
 collections - users, reviews, categories.
 - Deployed to Heroku.
+- Werkzeug
 
 # Testing
 This can be found in [testing.md](testing.md)
