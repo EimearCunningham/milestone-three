@@ -30,9 +30,9 @@ def get_reviews():
 def register():
     if request.method == "POST":
         # Check if username already exists
-        existing_user = mongo.db.users.find_one({
-            "username": request.form.get("username".lower())
-        })
+        existing_user = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+
         # If there is an existing user
         if existing_user:
             flash("Username already exists")
@@ -48,7 +48,7 @@ def register():
 
         # Put the user into session and return success flash message
         session["user"] = request.form.get("username").lower()
-        flash("Registration Successfull!")
+        flash(" Registration Successfull! ")
 
     return render_template("register.html")
 
