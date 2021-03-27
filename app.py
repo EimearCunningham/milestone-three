@@ -41,8 +41,8 @@ def register():
         # Create 'register' dictionary
         register = {
             "username": request.form.get("username").lower(),
-            "password": generate_password_hash(request.form.get("password")
-            )}
+            "password": generate_password_hash(request.form.get("password"))}
+
         # Insert dictionary to MongoDB
         mongo.db.users.insert_one(register)
 
@@ -53,7 +53,35 @@ def register():
     return render_template("register.html")
 
 
+# Log in function
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        # Check if username exists
+        existing_user = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+
+        if existing_user:
+            # Check if password matches
+            if check_password_hash(
+                existing_user["password"], request.form.get("password")):
+                    session["user"] = request.form.get("username").lower()
+                    flash("Welcome, {}".format(request.form.get("username")))
+
+            # If password doesn't match
+            else:
+                flash("Incorrect username / password")
+                return redirect(url_for("login"))
+
+        # If there was no match for user in database
+        else:
+            flash("Incorrect username / password")
+            return redirect(url_for("login"))
+
+    return render_template("login.html")
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
-    port=int(os.environ.get("PORT")),
-    debug=True)
+            port=int(os.environ.get("PORT")),
+            debug=True)
