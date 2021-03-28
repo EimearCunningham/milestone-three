@@ -99,6 +99,14 @@ def logout():
     return redirect(url_for("login"))
 
 
+# Add review functionality
+@app.route("/add_review")
+def add_review():
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("add_review.html", categories = categories)
+    
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
