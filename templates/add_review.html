@@ -2,7 +2,7 @@
 {% block content %}
 <h3>Add Review</h3>
 
-<form method="POST" action="">
+<form method="POST" action=" {{ url_for('add_review') }}">
     <div class="form-group">
         <label for="book_title">Book title</label>
         <input type="text" class="form-control" id="book_title" name="book_title" aria-describedby="book_title"
