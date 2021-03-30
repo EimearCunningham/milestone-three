@@ -16,7 +16,7 @@
             <li class="list-group-item">Reviewed by: {{ review.created_by }}</li>
         </ul>
         <div>
-            <a class="btn btn-primary btn-sm" href="#" role="button">Edit Review</a>
+            <a class="btn btn-primary btn-sm" href="{{ url_for('edit_review', review_id=review._id) }}" role="button">Edit Review</a>
             <a class="btn btn-secondary btn-sm" href="#" role="button">Delete Review</a>
         </div>
     </div>
