@@ -2,9 +2,10 @@ import os
 from flask import (
     Flask, flash, render_template, redirect, request, session, url_for)
 from flask_pymongo import PyMongo
+from bson.objectid import ObjectId
+from werkzeug.security import generate_password_hash, check_password_hash
 if os.path.exists("env.py"):
     import env
-from werkzeug.security import generate_password_hash, check_password_hash
 
 
 app = Flask(__name__)
@@ -114,9 +115,18 @@ def add_review():
         mongo.db.reviews.insert_one(review)
         flash("Review added!")
         return redirect(url_for("get_reviews"))
-        
+
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_review.html", categories=categories)
+
+
+@app.route("/edit_review/<review_id>", methods=["GET", "POST"])
+def edit_review(review_id):
+    review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
+
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template(
+        "edit_review.html", review=review, categories=categories)
 
 
 if __name__ == "__main__":
