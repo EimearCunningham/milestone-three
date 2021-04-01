@@ -6,21 +6,25 @@
     <div class="form-group">
         <label for="book_title">Book title</label>
         <input type="text" class="form-control" id="book_title" name="book_title" aria-describedby="book_title"
-            placeholder="Enter book title" minlength="3" maxlength="20" required>
+            value="{{review.book_title}}" placeholder="Enter book title" minlength="3" maxlength="20" required>
     </div>
 
     <div class="form-group">
         <label for="author">Author's Name</label>
         <input type="text" class="form-control" id="author" name="author" aria-describedby="author"
-            placeholder="Enter author's name" minlength="5" maxlength="20" required>
+            value="{{ review.author_name }}" placeholder="Enter author's name" minlength="5" maxlength="20" required>
     </div>
 
     <div class="form-group">
         <label for="category">Select Category</label>
         <select class="form-control" id="category" name="category" required>
-            <option selected disabled value="">Select Category</option>
+            <option disabled value="">Select Category</option>
             {% for category in categories %}
-            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                {% if category.category_name == review.category_name %}
+                    <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                {% else %}
+                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                {% endif %}
             {% endfor %}
         </select>
     </div>
@@ -28,13 +32,13 @@
     <div class="form-group">
         <label for="book_description">Description of book</label>
         <input type="text" class="form-control" id="book_description" name="book_description" aria-describedby="bookDescription"
-            placeholder="Enter book description" minlength="40" maxlength="200" required>
+            value="{{ review.book_description }}" placeholder="Enter book description" minlength="40" maxlength="200" required>
     </div>
 
     <div class="form-group">
         <label for="bookCover">Copy & paste url of book cover image</label>
         <input type="text" class="form-control" id="book_cover" name="book_cover" aria-describedby="book_cover"
-            placeholder="Enter book cover url" required>
+            value="{{ review.book_cover }}" placeholder="Enter book cover url" required>
     </div>
     
     <button type="submit" class="btn btn-primary">Edit Review</button>

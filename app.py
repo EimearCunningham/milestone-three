@@ -106,8 +106,8 @@ def add_review():
     if request.method == "POST":
         review = {
             "book_title": request.form.get("book_title"),
-            "author": request.form.get("author"),
-            "category": request.form.get("category"),
+            "author_name": request.form.get("author_name"),
+            "category_name": request.form.get("category_name"),
             "book_description": request.form.get("book_description"),
             "book_cover": request.form.get("book_cover"),
             "created_by": session["user"]
