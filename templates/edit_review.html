@@ -11,13 +11,13 @@
 
     <div class="form-group">
         <label for="author">Author's Name</label>
-        <input type="text" class="form-control" id="author" name="author" aria-describedby="author"
+        <input type="text" class="form-control" id="author_name" name="author_name" aria-describedby="author"
             value="{{ review.author_name }}" placeholder="Enter author's name" minlength="5" maxlength="20" required>
     </div>
 
     <div class="form-group">
-        <label for="category">Select Category</label>
-        <select class="form-control" id="category" name="category" required>
+        <label for="category_name">Select Category</label>
+        <select class="form-control" id="category_name" name="category_name" required>
             <option disabled value="">Select Category</option>
             {% for category in categories %}
                 {% if category.category_name == review.category_name %}
