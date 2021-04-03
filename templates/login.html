@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-
 <h2 class="text-center"> Log In here</h2>
 
 <!-- Registration form -->
@@ -11,22 +10,28 @@
         <!-- Username input -->
         <div class="form-group">
             <label for="username">Username</label>
-            <input type="text" class="form-control" id="username" name="username" aria-describedby="username" minlength="5" maxlength="15" required>
+            <input type="text" class="form-control" id="username" name="username" aria-describedby="username"
+                minlength="5" maxlength="15" required>
         </div>
 
         <!-- Password input-->
         <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" name="password" minlength="5" maxlength="15" required>
+            <input type="password" class="form-control" id="password" name="password" minlength="5" maxlength="15"
+                required>
         </div>
 
         <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary">Login</button>
+        <div class="col text-center">
+            <button type="submit" class="btn btn-outline-info">Login</button>
+        </div>
     </form>
     <div class="row">
-        <p>
+        <div class="col text-center" id="link">
             New here? <a href="{{ url_for('register')}}"> Register here</a>
-        </p>
+            </p>
+        </div>
+        <p>
     </div>
 </div>
 
