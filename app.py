@@ -26,6 +26,13 @@ def get_reviews():
     return render_template("reviews.html", reviews=reviews)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    reviews = list(mongo.db.reviews.find({"$text": {"$search": query}}))
+    return render_template("reviews.html", reviews=reviews)
+
+
 # Registration function
 @app.route("/register", methods=["GET", "POST"])
 def register():
