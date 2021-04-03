@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<h3>Add Review</h3>
+<h1>Add Review</h1>
 
 <form method="POST" action=" {{ url_for('add_review') }}">
     <div class="form-group">
@@ -37,7 +37,10 @@
             placeholder="Enter book cover url" required>
     </div>
     
-    <button type="submit" class="btn btn-primary">Submit Review</button>
+    <div class="col text-center">
+        <button type="submit" class="btn btn-outline-info" id="submit-review">Submit Review</button>
+    </div>
+
 </form>
 
 {% endblock %}

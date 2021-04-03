@@ -26,3 +26,7 @@ h1 {
     max-height: 400px;
     opacity: 0.9;
 }
+
+#submit-review {
+    margin-bottom: 40px;
+}
