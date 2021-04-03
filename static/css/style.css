@@ -2,6 +2,11 @@ body{
     font-family: 'Kiwi Maru', serif;
 }
 
+h1 {
+    text-align: center;
+    padding:20px;
+}
+
 .navbar-nav {
             margin-left: auto;
         }
