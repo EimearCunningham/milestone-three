@@ -32,10 +32,42 @@
         <div class="card-body">
             
             <h5 class="card-title"><b>{{ review.book_title }}</b></h5>
+
+            <div class="rating">
+            {% if review.rating == "5" %}
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+
+            {% elif review.rating == "4" %}
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                
+            {% elif review.rating == "3" %}
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                
+            {% elif review.rating == "2" %}
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+
+            {% elif review.rating == "1" %}
+                <i class="fa fa-star" aria-hidden="true"></i>
+            {% endif %}
         </div>
+        </div>
+
+        
+
+
         <ul class="list-group list-group-flush">
             <li class="list-group-item"><b>Author:</b> {{ review.author_name }}</li>
-            <li class="list-group-item"><b>Category:</b>{{ review.category_name }}</li>
+            <li class="list-group-item"><b>Category:</b> {{ review.category_name }}</li>
             <li class="list-group-item"><b>Description:</b> {{ review.book_description }}</li>
             <li class="list-group-item"><b>Reviewed by:</b> {{ review.created_by }}</li>
         </ul>
