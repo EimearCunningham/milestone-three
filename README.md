@@ -109,6 +109,7 @@ Go to Heroku and 'Enable automatic deployment' & 'Deploy branch'
 
 
 # Credits
+Favicon https://iconarchive.com/tag/favicon-book
 
 ## Code
 
