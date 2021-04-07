@@ -51,6 +51,15 @@ The following results and recommendations were obtained:
     - The Delete option will delete the review from the database.
 
 ## Manual testing of all elements and functionality 
+### Register functionality
+### Login functionality
+### Logout functionality
+### Add Review functionality 
+### Edit Review functionality
+### Delete Review functionality
+### Homepage
+### Search
+
 
 ## Console and Network Errors 
 

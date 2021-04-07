@@ -91,12 +91,19 @@ def login():
     return render_template("login.html")
 
 
-# Users Profile with username
+# Users Profile
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
-    return render_template("profile.html", username=username)
+    # Find all reviews created by user
+    if session["user"]:
+        reviews = list(mongo.db.reviews.find({"created_by": session["user"]}))
+        user = mongo.db.users.find_one(
+            {"username": session["user"]})["username"]
+
+    return render_template(
+        "profile.html", username=username, reviews=reviews, user=user)
 
 
 # Log out functionality
