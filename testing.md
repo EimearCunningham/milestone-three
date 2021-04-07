@@ -51,9 +51,31 @@ The following results and recommendations were obtained:
     - The Delete option will delete the review from the database.
 
 ## Manual testing of all elements and functionality 
-### Register functionality
-### Login functionality
+
+### Register Page
+- Accesible by selecting 'Register link' from navbar - Which is visible when user is not logged in.
+- Try to register an already existing username
+    - User receives flash message 'Username already exists.
+- Test username validation by inputting no username/ username less than 5 characters / username more than 15 characters
+    - User receives relevant promts / flash message that user name already exists / is too short / is required. User cannot type username longer than 15 characters.
+- Test password validation by inputting no password/ password less than 5 characters / password more than 15 characters.
+    - User receives relevant promts that password is too short / is required. User cannot type password longer than 15 characters.
+- Test submit button
+    - Upon submitting valid registration details, user is brought to their profile page and is shown a 'Registration Successfull!' flash message. The user is now logged into their account. 
+
 ### Logout functionality
+- Test logout button - Only visible to a logged in user
+    - On selecting the logout button from the navbar, the user is redirected to the login page and shown a flash message 'You have been logged out!'. Navigation bar changes so that user doesn't have options that only logged in users should have (Add Review, Profile, Log out)
+    
+### Login functionality
+- Login page accessible through navbar (to not logged in user)
+- Test submitting username that doesn't exist
+    - User receives flash message 'Incorrect username / password'
+- Test submitting incorrect password
+    - User receives flash message 'Incorrect username / password'
+-Test submitting valid username and password
+    - User is logged in, brought to their profile and shown a flash message - 'Welcome, {{username}}'
+
 ### Add Review functionality 
 ### Edit Review functionality
 ### Delete Review functionality

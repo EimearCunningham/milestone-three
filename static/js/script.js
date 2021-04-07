@@ -1,5 +1,5 @@
-// Scroll to top button
 
+// Scroll to top button
 //Get the button:
 mybutton = document.getElementById("scrollTop");
 
@@ -19,3 +19,8 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// Set timeout of 5 seconds for flash messages 
+setTimeout(function() {
+  $('#flash-message').fadeTo(5000, 0);
+})
