@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2 class="text-center"> Log In here</h2>
+<h1 class="text-center"> Log In here</h1>
 
 <!-- Registration form -->
 <div class="container">
     <form method="POST" actions=" {{ url_for('login') }}">
-
+        
         <!-- Username input -->
         <div class="form-group">
             <label for="username">Username</label>
@@ -25,6 +25,7 @@
         <div class="col text-center">
             <button type="submit" class="btn btn-outline-info">Login</button>
         </div>
+    
     </form>
     <div class="row">
         <div class="col text-center" id="link">
