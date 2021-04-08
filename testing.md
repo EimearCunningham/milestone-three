@@ -67,7 +67,7 @@ The following results and recommendations were obtained:
 - Test logout button - Only visible to a logged in user
     - On selecting the logout button from the navbar, the user is redirected to the login page and shown a flash message 'You have been logged out!'. Navigation bar changes so that user doesn't have options that only logged in users should have (Add Review, Profile, Log out)
     
-### Login functionality
+### Login Page
 - Login page accessible through navbar (to not logged in user)
 - Test submitting username that doesn't exist
     - User receives flash message 'Incorrect username / password'
@@ -76,7 +76,28 @@ The following results and recommendations were obtained:
 -Test submitting valid username and password
     - User is logged in, brought to their profile and shown a flash message - 'Welcome, {{username}}'
 
-### Add Review functionality 
+### Add Review page
+- Accessible from navbar when user is logged in
+- Test 'Book Title' field
+    - User cannot submit empty input, receives prompt - 'Please fill in this field'
+    - User cannot submit value less than 3 characters, receives prompt - 'Please lengthen this text to 3 characters or mroe, you are currently using (2) characters'
+    - User can not input more than 100 characters
+- Test 'Authors Name' field
+    - User cannot submit empty input, receives prompt - 'Please fill in this field'
+    - User cannot submit value less than 5 characters, receives prompt - 'Please lengthen this text to 5 characters or mroe, you are currently using (4) characters'
+    - User can not input more than 30 characters
+    **Updated max length from 20 to 30 to allow for longer author names**
+- Test 'Category' dropdown
+    - User cannot leave dropdown as default 'Select category' - Prompted to 'Please select an item in the list'
+    - Dropdown reveals all available book categories and allows user to select one
+- Test 'URL of book cover image
+    - Although input doesn't allow empty input, user can input text that is not a URL
+    **Add REGEX**
+- Test 'Rate this book' dropdown
+    - User cannot leave dropdown as default 'Rate this book' - Prompted to 'Please select an item in the list'
+    - Dropdown reveals all star ratings from 1-5 and allows user to select one
+- Upon submitting a valid form, the user is redirected to the main 'Reviews' page, where their review is added. They also receive a flash message - 'Review Added!'
+
 ### Edit Review functionality
 ### Delete Review functionality
 ### Homepage
