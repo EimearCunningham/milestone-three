@@ -92,13 +92,21 @@ The following results and recommendations were obtained:
     - Dropdown reveals all available book categories and allows user to select one
 - Test 'URL of book cover image
     - Although input doesn't allow empty input, user can input text that is not a URL
-    **Add REGEX**
+    **To fix this issue, I added pattern attribute to the form input with a regex pattern for URL**
 - Test 'Rate this book' dropdown
     - User cannot leave dropdown as default 'Rate this book' - Prompted to 'Please select an item in the list'
     - Dropdown reveals all star ratings from 1-5 and allows user to select one
 - Upon submitting a valid form, the user is redirected to the main 'Reviews' page, where their review is added. They also receive a flash message - 'Review Added!'
 
 ### Edit Review functionality
+- Test 'Edit Review' button on homepage, and Profile page
+    - Edit review button is only available to user if they submitted the review themselves
+    - Edit review button on both homepage and profile page lead the user to the Edit Review form.
+- Test that when user is redirected to 'Edit Review' page, that the form is prepopulated with that specfic reviews information
+    - All inputs show the correct information for the original review
+- Test that when each input on the Edit Review form is updated, the review is updated in the database and on the front end
+    - Review updates on both the homepage and the users profile page
+- Upon submitting the Edit Review form, user receives a flash message 'Review edited!'. User stays on Edit Review page
 ### Delete Review functionality
 ### Homepage
 ### Search

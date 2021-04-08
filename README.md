@@ -110,7 +110,8 @@ Go to Heroku and 'Enable automatic deployment' & 'Deploy branch'
 
 # Credits
 Favicon https://iconarchive.com/tag/favicon-book
-
+REGEX https://stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url 
+Scroll to top https://www.w3schools.com/howto/howto_js_scroll_to_top.asp 
 ## Code
 
 ## Content

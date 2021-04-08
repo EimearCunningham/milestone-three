@@ -2,19 +2,14 @@
 
 <!-- Hero Image-->
 <div id="hero" class="d-flex justify-content-center align-items-center container ">
+  <div class="col">
+    Welcome to On My Bookshelf!
+  </div>
   <!--Search Form-->
   <form action="{{ url_for('search') }}" method="POST" id="search-form" class="text-center">
     <div class="row text-center">
       <div class="col-sm-12">
-        <input
-          type="text"
-          name="query"
-          id="query"
-          class="validate col-sm-12 col-md-8"
-          minlength="3"
-          required
-          placeholder="Search by book/author"
-        />
+        <input type="text" name="query" id="query" class="validate col-sm-12 col-md-8" minlength="3" required placeholder="Search by book/author"/>
       </div>
       <div class="col">
         <a href="{{ url_for('get_reviews') }}" class="btn"> Reset </a>
