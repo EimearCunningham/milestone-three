@@ -8,27 +8,30 @@ A website for users to upload book reviews, and browse other peoples book review
 # UX
  
 ### Who this website is for:
-* This website is for people interested in reading.
+* This website is for people interested in reading who want to share book reviews with others & upload their own book reviews.
 
 ### What they want to achieve:
-* They want to browse through book reviews, add their own book reviews.
+* They want to browse through book reviews & add their own book reviews.
 
 ### This project is the best way to help them achieve these things because:
 * From the homepage, the user can easily browse through book reviews without having to register / login.
-* Once logged in the user has the opportunity to easily upoad their own book reviews.
+* Once logged in the user has the opportunity to easily upoad their own book reviews by filling out a short form.
 
 ## User Stories:
 1. As a user, I want to browse through book reviews and find more information on each book.
-2. As a user, I want to be able to upload my own book reviews to the site.
+2. As a user, I want to search for a book/author in the reviews.
 3. As a user, I want to be able to register and create an account on the site.
-4. As a user, I want to be able to login to the site and view my profile.
-5. As a user, I want to be able to edit / delete the reviews I have uploaded. 
+4. As a user, I want to be able to upload my own book reviews to the site.
+5. As a user, I want to be able to login to the site and view my profile.
+6. As a user, I want to be able to edit / delete the reviews I have uploaded. 
 
 ## Design 
-- Color Scheme 
-
-- Typography 
-    
+### Color Scheme 
+I decided to keep the color scheme of the site neutral and clean
+- A light grey/lilac (#d1d1e0) was used as the background color for the site 
+- A soft peach (#e8e4e3) was used as the background color for the review cards, to compliment the page background
+### Typography 
+- Google Font [Kiwi Maru](https://fonts.google.com/specimen/Kiwi+Maru)"Kiwi Maru" was used as the font type across the site. I thought this everyday text complimented the casual and clean style of the site.
 
 ## Wireframes:
 [desktop]
@@ -54,7 +57,7 @@ A website for users to upload book reviews, and browse other peoples book review
 - The page will contain a form with two inputs - "Username" and "Password", and a "Register" button.
 - When ths user selects the "Register" button and succesfully createas a profile, they will be redirected to their own Profile.
 
-### Register Page
+### Registration Page
 - The register page will also display the navigation bar at the top of the page.
 - Users will be able to login to their account by submitting a form with their username and password, and selecting a "Login" button.
 
@@ -63,23 +66,44 @@ A website for users to upload book reviews, and browse other peoples book review
 - Only logged in users will be able to access the "Add Review" section.
 - Users will be able to complete a form and submit a book review.
 
+### Edit Review Page
+- Users will be able to edit any reviews they created themselves.
+- The option will be available on the review displayed on the homepage and on the users profile page.
+- When the 'Edit Review' button is selected, the user will be brought to a form that is prepopulated with the reviews information.
+- The user will have the option to edit each field of the information and then submit the form to edit the review.
+
+### Delete Review functionality
+- Users will be able to delete any review that they uploaded, should they not want it shown on the site anymore.
+- They will have the option to 'Delete Review' from their profile page or the site homepage.
+- When selected, the review will be deleted.
+
 ### User Profile Page
 - Logged in users will be able to navigate to their own unique profile.
 - Their profile will display all of they book reviews they uploaded.
 - From here, users will be able to Edit and Delete reviews that they uploaded.
 
-### Features Left to Implement
+### Logout functionality
+- When logged in, users will have the option to 'Logout' displayed on the navbar.
+- When selected the user will be logged out from their account.
 
+### Features Left to Implement
 
 # Technologies Used
 ## Languages, frameworks and libraries used
-- Flask app created.
+* HTML5, CSS3, Javascript and Python were the programming languages used for this project.
+* [Github](https://github.com/)
+* [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Bootstrap version 4 was used for layout and responsiveness purposes..
+* [jQuery](https://jquery.com/)- jQuery was used to create the 'Scroll to top' button.
+* [Font Awesome](https://fontawesome.com/) - 
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Flask framework used to create app. 
+* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) - Templating language used with Flask
+* [Mongo DB Atlas](https://www.mongodb.com/) - Used to create non relational database
 
 ## Other technologies used
-- MongoDB was used to create a database and store data in JSON-like documents. A database called "bookshelf" was created with three
-collections - users, reviews, categories.
-- Deployed to Heroku.
-- Werkzeug
+* [Unsplash.com](https://unsplash.com/Unsplash.com) - Provided hero image for homepage
+* [Am I Responsive](http://ami.responsivedesign.is/) - Used to create responsive.JPG for README.
+* [Balsamiq](https://balsamiq.com/wireframes/) - Desktop app used to create wireframes.
+* [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/) - Used to hash users passwords.
 
 # Testing
 This can be found in [testing.md](testing.md)
