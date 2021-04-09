@@ -18,8 +18,9 @@
 </div>
 
 <!-- Users own reviews -->
-{% for review in reviews %}
+
 <div class="card-columns">
+  {% for review in reviews %}
   <div class="card">
     <img
       src="{{ review.book_cover }}"
@@ -86,7 +87,8 @@
       >
     </div>
   </div>
+  {% endfor %} 
 </div>
 
-{% endfor %} 
+
 {% endblock %}
