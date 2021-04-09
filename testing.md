@@ -108,9 +108,24 @@ The following results and recommendations were obtained:
     - Review updates on both the homepage and the users profile page
 - Upon submitting the Edit Review form, user receives a flash message 'Review edited!'. User stays on Edit Review page
 ### Delete Review functionality
-### Homepage
-### Search
+- Test Delete Review button from users profile page
+    - Button appears on all review on users profile page sa they were all created by the user
+    - When Delete Review button is selected the review is deleted from the profile page, the review page and the database
+    - When the button is selected from the Profile page, the user receives a flash message 'Review Deleted', and is redirected to the homepage
+- Test Delete Review button from homepage
+    - When user is not logged in, no reviews show the option to Delete Review
+    - When user is logged in, only reviews that they created show the Delete Review button
+    - When Delete Review button is selected the review is deleted from the  homepage, the profile page and the database
+    - When Delete Review button is selected from the homepage, the user receives a flash message 'Review Deleted', and the homepage is refreshed 
 
+### Search
+- Test searching by book title
+    - Search for name of book that review exists for & select 'Search' button - That review is shown to user
+    - Search one word of full book title eg 'The' and and books with 'The' in the title is shown to user
+- Test searching by author name
+    - Search for author name that review exists for - That review is returned to user
+    - Search for author name who has more than one book review - All reviews with that author name are returned to user
+**User has to scroll down each time to view search results**
 
 ## Console and Network Errors 
 
