@@ -6,26 +6,26 @@
 <!-- Registration form -->
 <div class="container">
     <form method="POST" actions=" {{ url_for('login') }}">
-        
+
         <!-- Username input -->
         <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" class="form-control" id="username" name="username" aria-describedby="username"
-                minlength="5" maxlength="15" required>
+            <label for="username"> <i class="fas fa-user"></i> Username</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Enter username"
+                aria-describedby="username" minlength="5" maxlength="15" required>
         </div>
 
         <!-- Password input-->
         <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" name="password" minlength="5" maxlength="15"
-                required>
+            <label for="password"> <i class="fas fa-lock"></i> Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password"
+                minlength="5" maxlength="15" required>
         </div>
 
         <!-- Submit Button -->
         <div class="col text-center">
             <button type="submit" class="btn btn-outline-info">Login</button>
         </div>
-    
+
     </form>
     <div class="row">
         <div class="col text-center" id="link">

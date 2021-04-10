@@ -10,14 +10,17 @@
 
         <!-- Username input -->
         <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" class="form-control" id="username" name="username" aria-describedby="username" minlength="5" maxlength="15" required>
+            <label for="username"> <i class="fas fa-user"> </i> Username</label>
+            <input type="text" class="form-control" id="username" name="username"
+                placeholder="Create username 5-15 characters in length" aria-describedby="username" minlength="5"
+                maxlength="15" required>
         </div>
 
         <!-- Password input-->
         <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" name="password" minlength="5" maxlength="15" required>
+            <label for="password"> <i class="fas fa-lock"></i> Password</label>
+            <input type="password" class="form-control" id="password" name="password"
+                placeholder="Create password 5-15 characters in length" minlength="5" maxlength="15" required>
         </div>
 
         <!-- Submit Button -->
@@ -34,7 +37,5 @@
         <p>
     </div>
 </div>
-
-
 
 {% endblock %}
