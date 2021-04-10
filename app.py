@@ -34,7 +34,6 @@ def search():
     return render_template("reviews.html", reviews=reviews)
 
 
-
 # Registration function
 @app.route("/register", methods=["GET", "POST"])
 def register():

@@ -140,6 +140,18 @@ This can be found in [testing.md](testing.md)
     - Select 'Enable automatic deploys' followed by 'Deploy branch'
     - This will take a couple of minutes before showing 'Your app was succesfully deployed'
 
+## Connecting to MongoDB Atlas
+MongoDB Atlas is the non-relational database used for storing data for this app. I set up the database and connected my app to MongoDB by following these steps:
+### Databate setup:
+- Create MongoDB account
+- Create shared cluster
+- Create database called 'bookshelf'
+- Go to 'Collections' section of database and select 'Add my own data'
+- Create 3 collections - categories, reviews, users
+- Insert documents to categories collection - One document for each category of books, as shown: ![categories collection](static/images/readme-images/categories-collection.JPG)
+- Insert document to reviews collection as shown: ![reviews collection](static/images/readme-images/reviews-collection.JPG)
+- Users are stored in the database as shown: ![users collection](static/images/readme-images/users-collection.JPG)
+
 # Credits
 Favicon https://iconarchive.com/tag/favicon-book
 REGEX https://stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url 
