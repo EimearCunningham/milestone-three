@@ -34,9 +34,11 @@ I decided to keep the color scheme of the site neutral and clean
 - Google Font [Kiwi Maru](https://fonts.google.com/specimen/Kiwi+Maru)"Kiwi Maru" was used as the font type across the site. I thought this everyday text complimented the casual and clean style of the site.
 
 ## Wireframes:
-[desktop]
-[tablet]
-[mobile]
+[desktop]()
+
+[tablet]()
+
+[mobile]()
 
 # Features
 ### Navigation bar
