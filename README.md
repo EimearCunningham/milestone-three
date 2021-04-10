@@ -87,6 +87,9 @@ I decided to keep the color scheme of the site neutral and clean
 - When selected the user will be logged out from their account.
 
 ### Features Left to Implement
+- **Known Issue** - A not logged in user has the ability to delete a review when only the user who created the review should be able to access this link. Because the link includes the object ID this is extremely unlikely to happen so I decided not to implement defensive programming for this issue, although it is something I hope to add in the future.
+- I would also like to add the functionality for the site creator to be able to login as an administrator and edit the book categories.
+- Functionality to add a 'Retype password' input to the Registration page to be added in the future.
 
 # Technologies Used
 ## Languages, frameworks and libraries used
