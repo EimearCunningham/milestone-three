@@ -1,16 +1,18 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 {% block content %}
 
 <!-- Hero Image-->
-<div id="hero" class="d-flex justify-content-center align-items-center container">
+<div id="hero" class="d-flex flex-column justify-content-center align-items-center container">
   <!--Search Form-->
+  <h1>Welcome to On My Bookshelf!</h1>
+  <p><b>An online book review site where you can browse through book reviews and share your book reviews with others</b></p>
   <form action="{{ url_for('search') }}" method="POST" id="search-form" class="text-center">
     <div class="row text-center">
       <div class="col-sm-12">
         <input type="text" name="query" id="query" class="validate col-sm-12 col-md-8" minlength="3" required
           placeholder="Search by book/author" />
       </div>
-      <div class="col">
+      <div class="col-lg">
         <a href="{{ url_for('get_reviews') }}" class="btn"> Reset </a>
         <button type="submit">Search</button>
       </div>

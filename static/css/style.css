@@ -21,6 +21,11 @@ h1 {
   margin-left: auto;
 }
 
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
 /* Homepage rules */
 #hero {
   height: 600px;
