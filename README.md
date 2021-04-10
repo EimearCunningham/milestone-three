@@ -1,12 +1,9 @@
-# On My Bookshelf
-![Site shown on different devices](assets/images/readme-images/INSERT IMAGE HERE)
-
-Live website: INSERT LIVE SITE LINK HERE
-
+# On My Bookshelf - An online community for book lovers
 A website for users to upload book reviews, and browse other peoples book reviews.
- 
+
+Live website: https://on-my-bookshelf-ms3.herokuapp.com/
+
 # UX
- 
 ### Who this website is for:
 * This website is for people interested in reading who want to share book reviews with others & upload their own book reviews.
 
@@ -31,7 +28,7 @@ I decided to keep the color scheme of the site neutral and clean
 - A light grey/lilac (#d1d1e0) was used as the background color for the site 
 - A soft peach (#e8e4e3) was used as the background color for the review cards, to compliment the page background
 ### Typography 
-- Google Font [Kiwi Maru](https://fonts.google.com/specimen/Kiwi+Maru)"Kiwi Maru" was used as the font type across the site. I thought this everyday text complimented the casual and clean style of the site.
+- Google Font [Kiwi Maru](https://fonts.google.com/specimen/Kiwi+Maru) was used as the font type across the site. I thought this everyday text complimented the casual and clean style of the site.
 
 ## Wireframes:
 - Wireframes for 3 screen sizes (Desktop, tablet and mobile).
@@ -53,22 +50,26 @@ I decided to keep the color scheme of the site neutral and clean
 ### Homepage
 - The homepage will display the navigation bar at the top of the page.
 - A large hero image will be displayed underneath the navigation bar.
+- There will be a text overlay to let users know the sites function.
+- A search bar will be placed over the hero image to allow users to search through the reviews below.
 - All uploaded book reviews will be displayed on the homepage.
 - If a user is logged in, the book reviews they have uploaded themselves will have the options "Edit" and "Delete".
 
-### Login Page
+### Registration Page
 - The login page will display the naviagation bar at the top of the page.
 - The page will contain a form with two inputs - "Username" and "Password", and a "Register" button.
-- When ths user selects the "Register" button and succesfully createas a profile, they will be redirected to their own Profile.
+- When ths user selects the "Register" button and succesfully createas a profile, they will be redirected to their own new Profile.
 
-### Registration Page
+### Login Page
 - The register page will also display the navigation bar at the top of the page.
 - Users will be able to login to their account by submitting a form with their username and password, and selecting a "Login" button.
+- On selecting the 'Login' button users will be directed to their profile page.
 
 ### Add Review Page
 - Again, the navigation bar will be visible at the top of this page.
 - Only logged in users will be able to access the "Add Review" section.
 - Users will be able to complete a form and submit a book review.
+- On submitting a review, the user will be directed to the homepage of the site where their review will be added.
 
 ### Edit Review Page
 - Users will be able to edit any reviews they created themselves.
@@ -84,7 +85,7 @@ I decided to keep the color scheme of the site neutral and clean
 ### User Profile Page
 - Logged in users will be able to navigate to their own unique profile.
 - Their profile will display all of they book reviews they uploaded.
-- From here, users will be able to Edit and Delete reviews that they uploaded.
+- From here, users will be able to View Edit and Delete reviews that they uploaded.
 
 ### Logout functionality
 - When logged in, users will have the option to 'Logout' displayed on the navbar.
@@ -97,24 +98,21 @@ I decided to keep the color scheme of the site neutral and clean
 
 # Technologies Used
 ## Languages, frameworks and libraries used
-* HTML5, CSS3, Javascript and Python were the programming languages used for this project.
-* [Github](https://github.com/)
-* [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Bootstrap version 4 was used for layout and responsiveness purposes..
-* [jQuery](https://jquery.com/)- jQuery was used to create the 'Scroll to top' button.
-* [Font Awesome](https://fontawesome.com/) - 
+* HTML5, CSS3, Javascript, Python and Jinja were the programming languages used for this project.
+* [Github](https://github.com/) - Used for hosting my repository and version control
+* [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Bootstrap version 4 was used for layout and responsiveness purposes.
+* [jQuery](https://jquery.com/)- jQuery was used to create the 'Scroll to top' button, and the flash message timeout.
+* [Font Awesome](https://fontawesome.com/) - Used for Star icons as part of book review cards, and username and password inputs on login & register forms.
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Flask framework used to create app. 
-* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) - Templating language used with Flask
 * [Mongo DB Atlas](https://www.mongodb.com/) - Used to create non relational database
 
 ## Other technologies used
-* [Unsplash.com](https://unsplash.com/Unsplash.com) - Provided hero image for homepage
-* [Am I Responsive](http://ami.responsivedesign.is/) - Used to create responsive.JPG for README.
+* [Heroku](http://heroku.com/) - Used to deploy project
 * [Balsamiq](https://balsamiq.com/wireframes/) - Desktop app used to create wireframes.
 * [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/) - Used to hash users passwords.
 
 # Testing
 This can be found in [testing.md](testing.md)
-
 
 # Deployment
 ## Project was deployed to Heroku by following these steps:
@@ -148,7 +146,7 @@ This can be found in [testing.md](testing.md)
     - This will take a couple of minutes before showing 'Your app was succesfully deployed'
 
 ## Connecting to MongoDB Atlas
-MongoDB Atlas is the non-relational database used for storing data for this app. I set up the database and connected my app to MongoDB by following these steps:
+MongoDB Atlas is the non-relational database used for storing data for this app. I set up the database by following these steps:
 ### Databate setup:
 - Create MongoDB account
 - Create shared cluster
@@ -158,19 +156,22 @@ MongoDB Atlas is the non-relational database used for storing data for this app.
 - Insert documents to categories collection - One document for each category of books, as shown: ![categories collection](static/images/readme-images/categories-collection.JPG)
 - Insert document to reviews collection as shown: ![reviews collection](static/images/readme-images/reviews-collection.JPG)
 - Users are stored in the database as shown: ![users collection](static/images/readme-images/users-collection.JPG)
+- Database schema: ![database schema](static/images/readme-images/database-schema.JPG)
 
 # Credits
-Favicon https://iconarchive.com/tag/favicon-book
-REGEX https://stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url 
-Scroll to top https://www.w3schools.com/howto/howto_js_scroll_to_top.asp 
+
 ## Code
-
+* Regex used to validate book cover URL was retrieved from [Stack Overflow](https://stackoverflow.com/questions/3809401/what-is-a-good-regular-expression-to-match-a-url)
+* Code for Scroll to Top button was found on [w3 Schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
 ## Content
-
+* [Icon Archive](https://iconarchive.com/tag/favicon-book) - Provided the favicon for the page
 ## Media
-
+* [Unsplash.com](https://unsplash.com/Unsplash.com) - Provided hero image for homepage
 ## Acknowledgements
-
+- I would like to thank my mentor Can Sucullu for helping me out with the initial stages of this project
+- I would also like to thank Chris Quinn for stepping in as my mentor for the final stages of this project
+- The Code Institute slack community for always helping out and encouraging along the way
+- Tim from Tutor Support for helping out with some issued with the users profile page
 
 **This site is for educational purposes only** 
 
