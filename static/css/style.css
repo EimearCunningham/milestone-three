@@ -17,6 +17,13 @@ h1 {
   padding: 20px;
 }
 
+h2 {
+
+}
+
+h3 {
+  padding-top: 30px;
+}
 .navbar-nav {
   margin-left: auto;
 }
