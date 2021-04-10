@@ -110,27 +110,35 @@ This can be found in [testing.md](testing.md)
 
 
 # Deployment
-## Project was deployed to Heroku 
+## Project was deployed to Heroku by following these steps:
+1. Set up files that Heroku needs
+    - A requirements.txt file to specify what python packages are required to run the project. Create in terminal: `pip3 freeze --local > requirements.txt`
+    - a Procfile that specifies the commands that are executed by the app on startup. Also created in terminal: `echo web: python app.py > Procfile`
 
-4 things we need to push to Heroku
-1.	Create Heroku app
-2.	Link git repository to Heroku
-3.	Create requirements.txt file
-4.	Create a Procfile
+2. Create Heroku app
+    - Go to [Heroku](https://www.heroku.com/) and create an account.
+    - Select the button to create a new app.
+    - Name app and select 'Europe' as region.
 
-1.	Create app on Heroku 
-Sign in and select ‘Create new app’
+3. Connect Github repository to Heroku
+    - Once app is created select 'Connect to GitHub' button.
+    - Search for Github repository name - 'milestone-three'
+    - Once found select to 'Connect'
 
-2. Select GitHub icon and insert repository name
-Search for repository and 'Connect' once found
-Go to 'Settings' tab of Heroku app
-Go to 'Reveal config vars'
-Add the following keys and values: INSERT SCREENGRAB OF CONFIG VARS
+4. Set up configuration vars on Heroku
+    - Go to 'Settings' tab of Heroku app
+    - Select 'Reveal config vars'
+    - Input the following keys and values. Note: MONGO_URI is left blank for now.
+    ![Image of config vars setup](static/images/readme-images/config-vars.JPG)
 
-3 & 4. Push requirements.txt and Procfile to GitHub
-Go to Heroku and 'Enable automatic deployment' & 'Deploy branch'
-'Your app was succesfully deployed' - https://on-my-bookshelf-ms3.herokuapp.com/
+5. Push requirements.txt and Procfile to Github
+    - git add & git commit both files
+    - git push both files together 
 
+6. Enable automatic deployment
+    - Go to Heroku app
+    - Select 'Enable automatic deploys' followed by 'Deploy branch'
+    - This will take a couple of minutes before showing 'Your app was succesfully deployed'
 
 # Credits
 Favicon https://iconarchive.com/tag/favicon-book
