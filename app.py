@@ -28,9 +28,11 @@ def get_reviews():
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    flash("Scroll down to view your search results!")
     query = request.form.get("query")
     reviews = list(mongo.db.reviews.find({"$text": {"$search": query}}))
     return render_template("reviews.html", reviews=reviews)
+
 
 
 # Registration function
