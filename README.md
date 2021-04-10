@@ -34,11 +34,13 @@ I decided to keep the color scheme of the site neutral and clean
 - Google Font [Kiwi Maru](https://fonts.google.com/specimen/Kiwi+Maru)"Kiwi Maru" was used as the font type across the site. I thought this everyday text complimented the casual and clean style of the site.
 
 ## Wireframes:
-[desktop]()
+- Wireframes for 3 screen sizes (Desktop, tablet and mobile).
 
-[tablet]()
+    [Desktop](https://github.com/EimearCunningham/milestone-three/blob/master/static/images/readme-images/wireframes/wireframe-desktop.pdf)
 
-[mobile]()
+    [Tablet](https://github.com/EimearCunningham/milestone-three/blob/master/static/images/readme-images/wireframes/wireframe-tablet.pdf)
+
+    [Mobile](https://github.com/EimearCunningham/milestone-three/blob/master/static/images/readme-images/wireframes/wireframe-mobile.pdf)
 
 # Features
 ### Navigation bar
