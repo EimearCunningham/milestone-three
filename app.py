@@ -19,6 +19,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
+# Homepage
 @app.route("/")
 @app.route("/get_reviews")
 def get_reviews():
@@ -26,6 +27,7 @@ def get_reviews():
     return render_template("reviews.html", reviews=reviews)
 
 
+# Search functionality
 @app.route("/search", methods=["GET", "POST"])
 def search():
     flash("Scroll down to view your search results!")
