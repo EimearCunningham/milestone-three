@@ -24,6 +24,7 @@ h2 {
 h3 {
   padding-top: 30px;
 }
+
 .navbar-nav {
   margin-left: auto;
 }
@@ -33,7 +34,7 @@ p {
   text-align: center;
 }
 
-/* Homepage rules */
+/* Homepage */
 #hero {
   height: 600px;
   background-repeat: no-repeat;
