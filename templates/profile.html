@@ -1,4 +1,4 @@
-{% extends "base.html" %} 
+{% extends "base.html" %}
 {% block content %}
 
 <!-- Welcome user -->
@@ -30,11 +30,7 @@
 <div class="card-columns">
   {% for review in reviews %}
   <div class="card">
-    <img
-      src="{{ review.book_cover }}"
-      class="card-img-top book-cover"
-      alt="Book cover of {{ review.book_title }} "
-    />
+    <img src="{{ review.book_cover }}" class="card-img-top book-cover" alt="Book cover of {{ review.book_title }} " />
     <div class="card-body">
       <h5 class="card-title"><b>{{ review.book_title }}</b></h5>
 
@@ -81,21 +77,13 @@
     </ul>
     <!-- Edit & Delete buttons -->
     <div>
-      <a
-        class="btn btn-outline-info btn-sm"
-        href="{{ url_for('edit_review', review_id=review._id) }}"
-        role="button"
-        >Edit Review</a
-      >
-      <a
-        class="btn btn-outline-dark btn-sm"
-        href="{{ url_for('delete_review', review_id=review._id) }}"
-        role="button"
-        >Delete Review</a
-      >
+      <a class="btn btn-outline-info btn-sm" href="{{ url_for('edit_review', review_id=review._id) }}"
+        role="button">Edit Review</a>
+      <a class="btn btn-outline-dark btn-sm" href="{{ url_for('delete_review', review_id=review._id) }}"
+        role="button">Delete Review</a>
     </div>
   </div>
-  {% endfor %} 
+  {% endfor %}
 </div>
 
 
