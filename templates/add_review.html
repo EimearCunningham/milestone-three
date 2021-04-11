@@ -5,13 +5,13 @@
 <form method="POST" action=" {{ url_for('add_review') }}">
     <div class="form-group">
         <label for="book_title">Book title</label>
-        <input type="text" class="form-control" id="book_title" name="book_title" aria-describedby="book_title"
+        <input type="text" class="form-control" id="book_title" name="book_title"
             placeholder="Enter book title" minlength="3" maxlength="100" required>
     </div>
 
     <div class="form-group">
         <label for="author_name">Author's Name</label>
-        <input type="text" class="form-control" id="author_name" name="author_name" aria-describedby="author"
+        <input type="text" class="form-control" id="author_name" name="author_name" 
             placeholder="Enter author's name" minlength="5" maxlength="30" required>
     </div>
 
@@ -27,18 +27,18 @@
 
     <div class="form-group">
         <label for="book_description">Description of book</label>
-        <input type="text" class="form-control" id="book_description" name="book_description" aria-describedby="bookDescription"
+        <input type="text" class="form-control" id="book_description" name="book_description"
             placeholder="Enter book description" minlength="40" maxlength="200" required>
     </div>
 
     <div class="form-group">
-        <label for="bookCover">Copy & paste url of book cover image</label>
-        <input type="text" class="form-control" id="book_cover" name="book_cover" aria-describedby="book_cover"
+        <label for="book_cover">Copy & paste url of book cover image</label>
+        <input type="text" class="form-control" id="book_cover" name="book_cover"
             placeholder="Enter book cover url" pattern="(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})" required>
     </div>
 
     <div class="form-group">
-        <select id="rating" name="rating" type="text" class="validate" required>
+        <select id="rating" name="rating" class="validate" required>
             <option value="" disabled selected> Rate This Book </option>
             <option value="1">1 Star</option>
             <option value="2">2 Stars</option>

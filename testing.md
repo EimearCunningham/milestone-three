@@ -7,8 +7,24 @@
 * [JS Hint](https://jshint.com/) - To validate JavaScript code
 
 ### Errors / Warnings found by W3C Markup Validation Service:
+All rendered pages were ran through the W3C Markup validation Service
 ## Errors:
-- 
+- Register and Login pages: 
+    - 'Error: Attribute actions not allowed on element form at this point.'
+        - This was resolved by correcting the typo 'actions' to 'action'
+- Add Review page: 
+    - 'Error: Attribute type not allowed on element select at this point.'
+        - Resolved by removing 'type' attribute from the select input.
+    - 'Error: The value of the for attribute of the label element must be the ID of a non-hidden form control.'
+        - Changed label for="bookCover" to for="book_cover"
+    - 'Error: The aria-describedby attribute must point to an element in the same document.'
+- Edit Review page:
+    - 'Error: Attribute type not allowed on element select at this point.'
+        - Removed type="text" from select input.
+    - 'Error: The first child option element of a select element with a required attribute, and without a multiple attribute, and without a size attribute whose value is greater than 1, must have either an empty value attribute, or must have no text content. Consider either adding a placeholder option label, or adding a size attribute with a value equal to the number of option elements.'
+        - Fixed by adding a first option with value="" to the select rating element
+    - 'Error: The value of the for attribute of the label element must be the ID of a non-hidden form control.'
+        - Changed for="author" to for="author_name" to match input ID.
 ## Warnings: 
 - 
 

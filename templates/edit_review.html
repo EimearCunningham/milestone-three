@@ -1,50 +1,22 @@
 {% extends "base.html" %} {% block content %}
 <h1>Edit Review</h1>
 
-<form
-  method="POST"
-  action=" {{ url_for('edit_review', review_id=review._id) }}"
->
+<form method="POST" action=" {{ url_for('edit_review', review_id=review._id) }}">
   <div class="form-group">
     <label for="book_title">Book title</label>
-    <input
-      type="text"
-      class="form-control"
-      id="book_title"
-      name="book_title"
-      aria-describedby="book_title"
-      value="{{review.book_title}}"
-      placeholder="Enter book title"
-      minlength="3"
-      maxlength="20"
-      required
-    />
+    <input type="text" class="form-control" id="book_title" name="book_title" 
+      value="{{review.book_title}}" placeholder="Enter book title" minlength="3" maxlength="20" required />
   </div>
 
   <div class="form-group">
-    <label for="author">Author's Name</label>
-    <input
-      type="text"
-      class="form-control"
-      id="author_name"
-      name="author_name"
-      aria-describedby="author"
-      value="{{ review.author_name }}"
-      placeholder="Enter author's name"
-      minlength="5"
-      maxlength="20"
-      required
-    />
+    <label for="author_name">Author's Name</label>
+    <input type="text" class="form-control" id="author_name" name="author_name" 
+      value="{{ review.author_name }}" placeholder="Enter author's name" minlength="5" maxlength="20" required />
   </div>
 
   <div class="form-group">
     <label for="category_name">Select Category</label>
-    <select
-      class="form-control"
-      id="category_name"
-      name="category_name"
-      required
-    >
+    <select class="form-control" id="category_name" name="category_name" required>
       <option disabled value="">Select Category</option>
       {% for category in categories %} {% if category.category_name ==
       review.category_name %}
@@ -61,39 +33,21 @@
 
   <div class="form-group">
     <label for="book_description">Description of book</label>
-    <input
-      type="text"
-      class="form-control"
-      id="book_description"
-      name="book_description"
-      aria-describedby="bookDescription"
-      value="{{ review.book_description }}"
-      placeholder="Enter book description"
-      minlength="40"
-      maxlength="200"
-      required
-    />
+    <input type="text" class="form-control" id="book_description" name="book_description"
+    value="{{ review.book_description }}" placeholder="Enter book description"
+      minlength="40" maxlength="200" required />
   </div>
 
   <div class="form-group">
-    <label for="bookCover">Copy & paste url of book cover image</label>
-    <input
-      type="text"
-      class="form-control"
-      id="book_cover"
-      name="book_cover"
-      aria-describedby="book_cover"
-      value="{{ review.book_cover }}"
-      placeholder="Enter book cover url"
-      required
-    />
+    <label for="book_cover">Copy & paste url of book cover image</label>
+    <input type="text" class="form-control" id="book_cover" name="book_cover"
+      value="{{ review.book_cover }}" placeholder="Enter book cover url" required />
   </div>
 
   <div class="form-group">
-    <select id="rating" name="rating" type="text" class="validate" required>
-      <option selected disabled value="{{ review.rating }}">
-        {{ review.rating }} Stars
-      </option>
+    <select id="rating" name="rating" class="validate" required>
+      <option disabled value="">Rate book</option>
+      <option value=" {{ review.rating }}" selected> {{ review.rating }} stars </option>
       <option value="1">1 Star</option>
       <option value="2">2 Stars</option>
       <option value="3">3 Stars</option>
