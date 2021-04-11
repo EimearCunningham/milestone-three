@@ -5,6 +5,7 @@
 * [W3C Markup Validation Service](https://validator.w3.org/) - To validate html code
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - To validatate CSS code
 * [JS Hint](https://jshint.com/) - To validate JavaScript code
+* [PEP8 Online](http://pep8online.com/) - To validate python code
 
 ### Errors / Warnings found by W3C Markup Validation Service:
 All rendered pages were ran through the W3C Markup validation Service
@@ -42,6 +43,9 @@ script.js file was ran through JS hint with the following comments:
 -One unused variable 'topFunction'
     - Ignored as variable is being called outside the JS file
 
+## Errors / Warnings found by PEP8 online:
+- 'continuation line with same indent as next logical line'
+    - Changed indentation of login function
 
 ## Testing User Stories 
 1. As a user, I want to browse through book reviews and find more information on each book.
@@ -145,7 +149,13 @@ script.js file was ran through JS hint with the following comments:
     - Search for author name who has more than one book review - All reviews with that author name are returned to user
 **User has to scroll down each time to view search results**
 
-## Console and Network Errors 
+## Console and terminal errors
+- No console errors
+- Terminal shows 'Doctype must be declared first'
+    - Ignored as doctype is declared in base.html
+- Terminal also shows 'env imported but unused'
+    - Ignored as env.py is not being pushed (in gitignore file)
+
 
 ## Accessability Testing
 [WAVE Web Accessability Evaluation Tool](https://wave.webaim.org/) was used to test the accessability of my site.

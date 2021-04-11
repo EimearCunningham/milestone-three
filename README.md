@@ -174,6 +174,3 @@ MongoDB Atlas is the non-relational database used for storing data for this app.
 - Tim from Tutor Support for helping out with some issued with the users profile page
 
 **This site is for educational purposes only** 
-
-BUGS:
-Validation on select category dropdown - Add value="" to <option selected disabled value="">Select Category</option>
