@@ -25,14 +25,22 @@ All rendered pages were ran through the W3C Markup validation Service
         - Fixed by adding a first option with value="" to the select rating element
     - 'Error: The value of the for attribute of the label element must be the ID of a non-hidden form control.'
         - Changed for="author" to for="author_name" to match input ID.
-## Warnings: 
-- 
+
 
 ### Errors / Warnings found by W3C CSS Validation Service:
-- 
+- No errors / warnings found
 
 ## Errors / Warnings found by JS Hint:
+script.js file was ran through JS hint with the following comments:
+/*globals $:false */ - As I used jQuery
+/*jshint esversion: 6 */ - As I used Javascript ES6
 ### Warnings
+- Two 'missing semicolons'
+    - Added semicolons to relevant lines
+- One undefined variable 'mybutton'
+    -  Declared variable using 'let' 
+-One unused variable 'topFunction'
+    - Ignored as variable is being called outside the JS file
 
 
 ## Speed Testing

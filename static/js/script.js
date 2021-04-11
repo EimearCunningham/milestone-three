@@ -1,10 +1,10 @@
 
 // Scroll to top button
 //Get the button:
-mybutton = document.getElementById("scrollTop");
+let mybutton = document.getElementById("scrollTop");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction();};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -23,4 +23,4 @@ function topFunction() {
 // Set timeout of 5 seconds for flash messages 
 setTimeout(function() {
   $('#flash-message').fadeTo(5000, 0);
-})
+});
