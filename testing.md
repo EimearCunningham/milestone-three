@@ -43,12 +43,6 @@ script.js file was ran through JS hint with the following comments:
     - Ignored as variable is being called outside the JS file
 
 
-## Speed Testing
-[Pingdom.com](https://tools.pingdom.com/) was used to test the load time of the website.
-The following results and recommendations were obtained:
-
-![Speed Test Results](assets/images/readme-images/speed-test.JPG)
-      
 ## Testing User Stories 
 1. As a user, I want to browse through book reviews and find more information on each book.
     - The first page that the user is greeted with when visiting the site is the "review.html" page.
@@ -156,4 +150,10 @@ The following results and recommendations were obtained:
 ## Accessability Testing
 [WAVE Web Accessability Evaluation Tool](https://wave.webaim.org/) was used to test the accessability of my site.
 The following recommendations and changes were made:
+1. 1x missing form label - Search bar on homepage
+    - Added label to search form on homepage
+2. 1x long alternative text
+    - Igonored as this will depend on the length of the book title the user has input.
+3. 1x skipped level hearding
+    - Changed h5 in book review cards to h2.
     

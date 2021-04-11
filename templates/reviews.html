@@ -9,6 +9,7 @@
   <form action="{{ url_for('search') }}" method="POST" id="search-form" class="text-center">
     <div class="row text-center">
       <div class="col-sm-12">
+        <label for="query"></label>
         <input type="text" name="query" id="query" class="validate col-sm-12 col-md-8" minlength="3" required
           placeholder="Search by book/author" />
       </div>
@@ -29,7 +30,7 @@
   <div class="card">
     <img src="{{ review.book_cover }}" class="card-img-top book-cover" alt="Book cover of {{ review.book_title }} " />
     <div class="card-body">
-      <h5 class="card-title"><b>{{ review.book_title }}</b></h5>
+      <h2 class="card-title"><b>{{ review.book_title }}</b></h2>
 
       <div class="rating">
         {% if review.rating == "5" %}
